@@ -73,7 +73,7 @@ p.tipstyle03 {
 }
 
 span.style01 {
-    background: linear-gradient(transparent 70%, #ffd700 70%);
+    background: linear-gradient(transparent 90%, #ffd700 90%);
 }
 
 table.tablestyle01 {
@@ -90,7 +90,7 @@ table.tablestyle01 th, table.tablestyle01 td{
 table.tablestyle02 {
     table-layout: auto; width: 100%;
     color:#111; font-size: 13px; font-weight: 500; font-family: Helvetica, "游ゴシック", serif;
-    border-collapse: collapse; border-spacing:0; border:1px solid #777;
+    border-collapse: collapse; border-spacing:0; border:0px solid #777;
 }
 
 table.tablestyle02 th, table.tablestyle02 td{

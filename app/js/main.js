@@ -94,7 +94,7 @@ let contents = '<p align="left"><ul><li><a href="https://www.moj.go.jp/MINJI/min
 contents += '<li>このウェブページは上記の出典元の情報に基づき、当サイト管理者が独自に加工・作成したものです。土地区画と地名は出典元のXMLファイルを<a href="https://www.digital.go.jp/news/4b7250a3-3fcf-4b83-8d52-4bb131e1ba9d/" target="_blank">こちら</a>を利用して変換したものですが、<span class="style01">面積については当サイト管理者が別途計算した推定値</span>となります。</li>'
 contents += '<li>柏市内に滞在中であれば、スマートフォンなどお使いの機器の位置情報取得を許可し、<i class="fas fa-map-marker-alt" style="color:#555"></i>　ボタンを押すことで、現在位置を表示することができます。</li>'
 contents += '<li>なお、<span class="style01">本ウェブサイトがご利用者様の位置情報等を含め個人情報を記録することは一切ございません</span>のでご安心ください。</li>'
-contents += '<li>お問い合わせは下記へ連絡ください。</li></ul></p><p align="center"><a href="https://twitter.com/smille_feuille" target="_blank"><i class="fab fa-twitter-square" style="color:lightblue"></i> twitter@Smille_feuille</a></p>';
+contents += '<li>お問い合わせは当サイト管理者へご連絡ください。（ <a href="https://twitter.com/smille_feuille" target="_blank">Twitter</a> | <a href="https://github.com/sanskruthiya/tanaka-cadastre" target="_blank">Github</a> ）</li></ul></p>';
 
 L.control.layers(baseMaps, overlayMaps, {collapsed:false}).addTo(map);
 
