@@ -35,9 +35,9 @@ function onEachFeature_cadastral01(feature, layer){
     let popupContent;
     popupContent =
         '<table class="tablestyle02">'+
-        '<tr><td>地点名</td><td>'+(feature.properties.name)+'</td></tr>'+
+        '<tr><td>地番名</td><td>'+(feature.properties.name)+'</td></tr>'+
         '<tr><td>推定面積<p class="remarks"></p></td><td>'+(feature.properties.area)+' m2</td></tr>'+
-        '</table><p class="remarks">地点名は住所とは異なります。<br>面積は独自計算した推定値です。</p>';
+        '</table><p class="remarks">地番名は住所とは異なります。<br>面積は独自計算した推定値です。</p>';
     const popupStyle = L.popup({autoPan:true}).setContent(popupContent);
     layer.bindPopup(popupStyle);
     layer.on({click: onClickFeature01});
@@ -91,7 +91,8 @@ const baseMaps = {
 
 const slidemenutitle = '<h3 align="center">柏たなか土地登記マップ</h3><p align="center">（2023年1月）</p><hr class="style01">';
 let contents = '<p align="left"><ul><li><a href="https://www.moj.go.jp/MINJI/minji05_00494.html" target="_blank">法務省法務局が提供</a>し、<a href="https://front.geospatial.jp/" target="_blank">G空間情報センター</a>で公開している<span class="style01">登記所備付地図データ</span>に基づき、<span class="style01">千葉県柏市の柏たなかエリアの土地登記の区画などを示すマップ</span>です。</li>'
-contents += '<li>このウェブページは上記の出典元の情報に基づき、当サイト管理者が独自に加工・作成したものです。土地区画と地名は出典元のXMLファイルを<a href="https://www.digital.go.jp/news/4b7250a3-3fcf-4b83-8d52-4bb131e1ba9d/" target="_blank">こちら</a>を利用して変換したものですが、<span class="style01">面積については当サイト管理者が別途計算した推定値</span>となります。</li>'
+contents += '<li>このウェブページは上記の出典元の情報に基づき、当サイト管理者が独自に加工・作成したものです。土地区画と地名は出典元のXMLファイルについて<a href="https://www.digital.go.jp/news/4b7250a3-3fcf-4b83-8d52-4bb131e1ba9d/" target="_blank">こちら</a>を利用して変換したものですが、<span class="style01">面積については当サイト管理者が別途計算した推定値</span>となります。</li>'
+contents += '<li>下図には <a href="https://maps.gsi.go.jp/development/ichiran.html" target="_blank">地理院タイル</a> と <a href="https://openstreetmap.org" target="_blank">OpenStreetMap</a>を利用しています。</li>'
 contents += '<li>柏市内に滞在中であれば、スマートフォンなどお使いの機器の位置情報取得を許可し、<i class="fas fa-map-marker-alt" style="color:#555"></i>　ボタンを押すことで、現在位置を表示することができます。</li>'
 contents += '<li>なお、<span class="style01">本ウェブサイトがご利用者様の位置情報等を含め個人情報を記録することは一切ございません</span>のでご安心ください。</li>'
 contents += '<li>お問い合わせは当サイト管理者へご連絡ください。（ <a href="https://twitter.com/smille_feuille" target="_blank">Twitter</a> | <a href="https://github.com/sanskruthiya/tanaka-cadastre" target="_blank">Github</a> ）</li></ul></p>';
